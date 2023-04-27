@@ -38,6 +38,7 @@ section#login {
     margin: auto;
 
     background-color: white;
+    min-width: 250px;
     width: 250px;
     height: 510px;
     border-radius: 20px;
@@ -81,11 +82,6 @@ article#form > form.flex-container {
     
 }
 
-.flex-item{
-    /* */
-    
-}
-
 article#form > form > div.campo {
     margin: auto;
     background-color: #D99B96;
@@ -97,6 +93,10 @@ article#form > form > div.campo {
     margin-bottom: 5px;*/
 }
 
+article#form > form > div.flex-container{
+    display: inline-flex;
+}
+
 article#form > form > div.campo > input {
     background-color: #e9cbc9;
     height: 35px;
@@ -106,6 +106,8 @@ article#form > form > div.campo > input {
     font-size: 1em;
     text-indent: 5px;
 }
+
+
 
 article#form > form > div.campo > input:focus-within {
     background-color: white;
