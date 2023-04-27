@@ -22,25 +22,28 @@ body, html {
     width: 100vw;
 }
 
-main {
-    position: relative; /* PROVISÓRIO ATÉ CONSEGUIR USAR GRID E FLEXBOX */
-    height: 100vh;    
+main.flex-container {
+    /* position: relative; /* PROVISÓRIO ATÉ CONSEGUIR USAR GRID E FLEXBOX */
+    height: 100vh; 
     width: 100vw;
+
+    display: flex;    
 }
 
 section#login {
-    position: absolute;
+    /*position: absolute;
     top: 50%;
-    left: 50%;
+    left: 50%;*/
     overflow: hidden;
+    margin: auto;
 
     background-color: white;
-    min-width: 250px;
+    width: 250px;
     height: 510px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.361);
 
-    transform: translate(-50%,-50%);
+   /* transform: translate(-50%,-50%);*/
 }
 
 section#login > article#img {
@@ -59,18 +62,28 @@ section#login > article#form {
 article#form > h1 {
     font-size: 1.7em;
     text-align: center;
-    padding: 5px 0px;
+    padding-top: 5px;
+    padding-bottom: 10px;
 }
 
 article#form > p {
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     text-align: justify;
 }
 
-article#form > form {
-    display: block;
+article#form > form.flex-container {
+    /*display: block;
     text-align: center; /* PROVISÓRIO */
 
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+
+.flex-item{
+    /* */
+    
 }
 
 article#form > form > div.campo {
@@ -79,7 +92,7 @@ article#form > form > div.campo {
     width: 100%;
     height: 40px;
     border-radius: 10px;
-    margin: 5px 0px;
+    /*margin: 5px 0px;
     /*padding-bottom: 10px;
     margin-bottom: 5px;*/
 }
@@ -118,7 +131,7 @@ article#form > form > input[type=submit]{
     font-size: 1em;
     border: solid 1px #D9B68B;
     margin: auto;
-    margin-bottom: 5px;
+   /* margin-bottom: 5px;*/
     width: 100%;
     height: 40px;
     border-radius: 10px;
