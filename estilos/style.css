@@ -82,32 +82,32 @@ article#form > form.flex-container {
     
 }
 
-article#form > form > div.campo {
+article#form > form > div.campo.flex-container {
     margin: auto;
     background-color: #D99B96;
     width: 100%;
     height: 40px;
     border-radius: 10px;
+
+    /* FLEX CONFIG */
+    display: inline-flex;
+    align-items: center;
+    align-content: center;
+
     /*margin: 5px 0px;
     /*padding-bottom: 10px;
     margin-bottom: 5px;*/
 }
 
-article#form > form > div.flex-container{
-    display: inline-flex;
-}
-
 article#form > form > div.campo > input {
     background-color: #e9cbc9;
     height: 35px;
-    width: calc(100% - 44px);
+    width: calc(100% - 41px);
     border-radius: 10px;
     border: 0px;
     font-size: 1em;
     text-indent: 5px;
 }
-
-
 
 article#form > form > div.campo > input:focus-within {
     background-color: white;
@@ -122,8 +122,8 @@ article#form > form > div.campo > span.material-symbols-outlined{
     color: #8C2703;
     font-size: 2em;
     width: 38px;
-    /* CENTRALIZAR COM GRID???? */
-    
+    text-align: center; /* !!!!! */
+        
 }
 
 article#form > form > input[type=submit]{
