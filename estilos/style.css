@@ -5,6 +5,7 @@
     OFF-WHITE #D7D9D9
     BEGE #D9B68B ou #dcc8af
     ROSE #D99B96    
+    BONINA #8C2703
 
 */ 
 
@@ -100,6 +101,14 @@ article#form > form > div.campo > input:focus-within {
 
 article#form > form > div.campo > label {
     display: none;
+}
+
+article#form > form > div.campo > span.material-symbols-outlined{
+    color: #8C2703;
+    font-size: 2em;
+    width: 38px;
+    /* CENTRALIZAR COM GRID???? */
+    
 }
 
 article#form > form > input[type=submit]{
