@@ -30,7 +30,7 @@ main.flex-container {
     display: flex;    
 }
 
-section#login {
+section#login.flex-container{
     /*position: absolute;
     top: 50%;
     left: 50%;*/
@@ -43,6 +43,10 @@ section#login {
     height: 510px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.361);
+
+    /*FLEX CONFIG*/
+    display: flex;
+    flex-direction: column;
 
    /* transform: translate(-50%,-50%);*/
 }
@@ -58,6 +62,10 @@ section#login > article#img {
 section#login > article#form {
     display: block;
     padding: 10px;
+}
+
+article.flex-item {
+    flex-basis: 50%;
 }
 
 article#form > h1 {
