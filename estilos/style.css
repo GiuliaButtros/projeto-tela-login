@@ -34,8 +34,8 @@ section#login {
     overflow: hidden;
 
     background-color: white;
-    width: 250px;
-    height: 500px;
+    min-width: 250px;
+    height: 510px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.361);
 
@@ -50,19 +50,83 @@ section#login > article#img {
     background-position: center left;
 }
 
+section#login > article#form {
+    display: block;
+    padding: 10px;
+}
+
 article#form > h1 {
     font-size: 1.7em;
     text-align: center;
-    padding: 10px 0px;
+    padding: 5px 0px;
 }
 
 article#form > p {
-    padding: 0px 10px 20px 10px;
+    padding: 0px 10px 5px 10px;
     text-align: justify;
 }
 
-form {
+article#form > form {
     display: block;
     text-align: center; /* PROVISÓRIO */
     padding: 10px 0px;
+}
+
+article#form > form > div.campo {
+    margin: auto;
+    background-color: #D99B96;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    margin: 5px 0px;
+   /* padding-bottom: 10px;
+    margin-bottom: 5px;*/
+}
+
+article#form > form > div.campo > input {
+    height: 35px;
+    width: 34vw;
+    border-radius: 10px;
+    border: 0px;
+    font-size: 1em;
+}
+
+article#form > form > div.campo > label {
+    display: none;
+}
+
+article#form > form > input[type=submit]{
+    display: block;
+    background-color: #D9B68B;
+    font-weight: bold;
+    font-size: 1em;
+    border: solid 1px #D9B68B;
+    margin: auto;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+article#form > form > input[type=submit]:hover {
+    background-color: #faefe2;
+}
+
+article#form > form > a.esqueci {
+    display: block;
+    background-color: white;
+    color: #c2a078;
+    font-weight: 500;
+    border: solid 1px #D9B68B;
+    margin: auto;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    text-decoration: none;   
+    
+}
+
+article#form > form > a.esqueci:hover {
+    background-color: #faefe2;
 }
