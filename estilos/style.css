@@ -62,14 +62,14 @@ article#form > h1 {
 }
 
 article#form > p {
-    padding: 0px 10px 5px 10px;
+    padding-bottom: 10px;
     text-align: justify;
 }
 
 article#form > form {
     display: block;
     text-align: center; /* PROVISÓRIO */
-    padding: 10px 0px;
+
 }
 
 article#form > form > div.campo {
@@ -79,16 +79,23 @@ article#form > form > div.campo {
     height: 40px;
     border-radius: 10px;
     margin: 5px 0px;
-   /* padding-bottom: 10px;
+    /*padding-bottom: 10px;
     margin-bottom: 5px;*/
 }
 
 article#form > form > div.campo > input {
+    background-color: #e9cbc9;
     height: 35px;
-    width: 34vw;
+    width: calc(100% - 44px);
     border-radius: 10px;
     border: 0px;
     font-size: 1em;
+    text-indent: 5px;
+}
+
+article#form > form > div.campo > input:focus-within {
+    background-color: white;
+    outline: none;
 }
 
 article#form > form > div.campo > label {
@@ -118,15 +125,21 @@ article#form > form > a.esqueci {
     background-color: white;
     color: #c2a078;
     font-weight: 500;
+    text-decoration: none;  
+    text-align: center;
+
     border: solid 1px #D9B68B;
     margin: auto;
+    padding-top: 10px;
     width: 100%;
     height: 40px;
-    border-radius: 10px;
-    text-decoration: none;   
-    
+    border-radius: 10px;  
 }
 
 article#form > form > a.esqueci:hover {
     background-color: #faefe2;
+}
+
+article#form > form > a.esqueci > i {
+    font-size: 1.2em;
 }
