@@ -17,7 +17,7 @@ Grandes telas: acima de 1920px
     }
 
     section#login.flex-container{
-        width: 80vw;
+        width: 75vw;
         height: 350px;
 
         flex-direction: row;
@@ -25,20 +25,24 @@ Grandes telas: acima de 1920px
 
     section#login > article#img{
         height: 100%;
-        width: 40%;
-        background-position:       
+        width: 50%;     
     }
 
     section#login > article#form {
-        width: /*70% */;
         margin: auto;
     }
 
     article.flex-item {
-        flex: 2 1 auto;
+        flex-basis: auto;
     }
 
-    
+    article#form > h1 {
+        margin-top: -20px;
+        padding-bottom: 20px;
+    }
 
-    
+    article#form > p {
+        padding-bottom: 20px;
+    }
+
 }
