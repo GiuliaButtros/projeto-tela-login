@@ -10,3 +10,35 @@ Desktop: 992px até 1920px
 Grandes telas: acima de 1920px
 */
 
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+    body,html{
+        background-image: linear-gradient(to top, #dcc8af, #D99B96 );
+    }
+
+    section#login.flex-container{
+        width: 80vw;
+        height: 350px;
+
+        flex-direction: row;
+    }
+
+    section#login > article#img{
+        height: 100%;
+        width: 40%;
+        background-position:       
+    }
+
+    section#login > article#form {
+        width: /*70% */;
+        margin: auto;
+    }
+
+    article.flex-item {
+        flex: 2 1 auto;
+    }
+
+    
+
+    
+}

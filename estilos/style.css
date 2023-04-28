@@ -41,7 +41,7 @@ section#login.flex-container{
     min-width: 250px;
     width: 250px;
     height: 510px;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.361);
 
     /*FLEX CONFIG*/
@@ -128,7 +128,7 @@ article#form > form > div.campo > label {
 
 article#form > form > div.campo > span.material-symbols-outlined{
     color: #8C2703;
-    font-size: 2em;
+    font-size: 1.8em;
     width: 38px;
     text-align: center; /* !!!!! */
         
