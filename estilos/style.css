@@ -23,7 +23,6 @@ body, html {
 }
 
 main.flex-container {
-    /* position: relative; /* PROVISÓRIO ATÉ CONSEGUIR USAR GRID E FLEXBOX */
     height: 100vh; 
     width: 100vw;
 
@@ -31,9 +30,6 @@ main.flex-container {
 }
 
 section#login.flex-container{
-    /*position: absolute;
-    top: 50%;
-    left: 50%;*/
     overflow: hidden;
     margin: auto;
 
@@ -48,7 +44,8 @@ section#login.flex-container{
     display: flex;
     flex-direction: column;
 
-   /* transform: translate(-50%,-50%);*/
+   transition: width .4s, height .4s;
+   transition-timing-function: ease;
 }
 
 section#login > article#img {
@@ -81,9 +78,6 @@ article#form > p {
 }
 
 article#form > form.flex-container {
-    /*display: block;
-    text-align: center; /* PROVISÓRIO */
-
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -102,9 +96,6 @@ article#form > form > div.campo.flex-container {
     align-items: center;
     align-content: center;
 
-    /*margin: 5px 0px;
-    /*padding-bottom: 10px;
-    margin-bottom: 5px;*/
 }
 
 article#form > form > div.campo > input {
@@ -130,7 +121,7 @@ article#form > form > div.campo > span.material-symbols-outlined{
     color: #8C2703;
     font-size: 1.8em;
     width: 38px;
-    text-align: center; /* !!!!! */
+    text-align: center;
         
 }
 
@@ -141,7 +132,6 @@ article#form > form > input[type=submit]{
     font-size: 1em;
     border: solid 1px #D9B68B;
     margin: auto;
-   /* margin-bottom: 5px;*/
     width: 100%;
     height: 40px;
     border-radius: 10px;

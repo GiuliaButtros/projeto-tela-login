@@ -12,7 +12,7 @@ Grandes telas: acima de 1920px
 
 @media screen and (min-width: 768px) and (max-width: 992px){
 
-    body,html{
+    body{
         background-image: linear-gradient(to top, #dcc8af, #D99B96 );
     }
 
@@ -44,5 +44,46 @@ Grandes telas: acima de 1920px
     article#form > p {
         padding-bottom: 20px;
     }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    body{
+        background-image: linear-gradient(to top, #dcc8af, #D99B96 );
+    }
+
+    section#login.flex-container{
+        width: 950px;
+        height: 400px;
+
+        flex-direction: row-reverse;
+    }
+
+    section#login > article#img{
+        height: 100%;
+        width: 50%; 
+    }
+
+    section#login > article#form {
+        margin: auto;
+    }
+
+    article#form > h1 {
+        margin-top: -20px;
+        padding-bottom: 20px;
+    }
+
+    article#form > p {
+        padding-bottom: 20px;
+    }
+
+    
+
+
+
+
+
+
 
 }
